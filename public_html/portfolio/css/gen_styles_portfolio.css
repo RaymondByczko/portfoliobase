@@ -1,0 +1,46 @@
+li {display: none; }
+#masthead_id { 
+
+background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 65%, #383838 87%, #1b1b1b 100%) repeat scroll 0% 0% transparent; }
+#rp_id {background: url(../images/rp.png) }
+#trail_id {background: url(../images/trail.png) }
+#header_id { border: red double 4px }
+.hmenu { border: green double 4px; font-size: 8pt; color: white; text-align: center }
+#home_id { background: #3a7ab3; font-size: 8pt; text-align: center }
+#homeb_id { background: #004481 }
+#layouts_id { background: #469cdc }
+#layoutsb_id { background: #0065af }
+.layoutmenu { border: blue solid 1px; font-size: 8pt; color: white; text-align: center; background: #3a7ab3 }
+#clips_id {background:#37badd }
+#clipsb_id {background: #008eb4 }
+.clipsmenu { border: blue solid 1px; font-size: 8pt; color: white; text-align: center; background: #37badd }
+#phpmisc_id {background: #41b467 }
+#phpmiscb_id {background: #007e2a }
+.phpmiscmenu {border: blue solid 1px; font-size: 8pt; color: white; text-align:center; background: #007e2a } 
+#whatsnew_id {background: #ff5353 }
+#whatsnewb_id {background: #e30000 }
+.whatsnwmenu {border: blue solid 1px; font-size: 8pt; color: white; text-align:center; background: #ff5353 } 
+#googleapps_id {background: #b84d94 }
+#googleappsb_id {background: #7e0054 }
+.googleappsmenu {border: blue solid 1px; font-size: 8pt; color: white; text-align:center; background: #b84d94 } 
+#share_id {background: #ef894c }
+#shareb_id {background: #c24a01 }
+#documentation_id {background: #f7ba4f }
+#documentationb_id {background: #cc8101 }
+#left_id { border: green double 4px }
+#menu1_id { border: yellow double 4px }
+#menu2_id { border: rgb(155,50,0) double 4px }
+#menu3_id { border: rgb(50,155,0) double 4px }
+#menu4_id { border: rgb(0,50,155) double 4px }
+#menu5_id { border: rgb(5,20,205) double 4px }
+#menu6_id { border: rgb(175,0,0) double 4px }
+#menu7_id { border: rgb(75,75,75) double 4px }
+#menu8_id { border: rgb(50,155,0) ridge 4px }
+#menu9_id { border: rgb(0,50,155) ridge 4px }
+#menu10_id { border: rgb(50,155,25) ridge 4px }
+#left_middle_id { border: blue solid 4px }
+#middle_id { border: red dashed 4px }
+#footer_id { 
+
+background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 65%, #383838 87%, #1b1b1b 100%) repeat scroll 0% 0% transparent; }
+
