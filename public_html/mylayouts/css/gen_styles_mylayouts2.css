@@ -1,0 +1,34 @@
+#masthead_id { 
+background: -moz-linear-gradient(center top , rgb(180, 221, 180) 0%, rgb(131, 199, 131) 17%, rgb(82, 177, 82) 33%, rgb(0, 138, 0) 65%, rgb(0, 87, 0) 91%, rgb(0, 36, 0) 100%) repeat scroll 0% 0% transparent; }
+#raytoday_id {background: url(../rayt-logo.png) }
+#fishtoday_id {background: url(../fish-today.png) }
+#redfish_id {background: url(../red-fish.png) }
+#fishhook_id {background: url(../fish-hook.png) }
+#header_id { border: red double 4px }
+.hmenu { border: green double 4px; font-size: 8pt; color: white; text-align: center }
+#home_id { background: #3a7ab3; font-size: 8pt; text-align: center }
+#homeb_id { background: #004481 }
+#reports_id { background: #469cdc }
+#reportsb_id { background: #0065af }
+#species_id {background:#37badd }
+#speciesb_id {background: #008eb4 }
+#lures_id {background: #41b467 }
+#luresb_id {background: #007e2a }
+#boats_id {background: #ff5353 }
+#boatsb_id {background: #e30000 }
+#offshore_id {background: #b84d94 }
+#offshoreb_id {background: #7e0054 }
+#reels_id {background: #ef894c }
+#reelsb_id {background: #c24a01 }
+#weather_id {background: #f7ba4f }
+#weatherb_id {background: #cc8101 }
+#left_id { border: green double 4px; style:'position: absolute; top:138px; left:80px; width:50px; height: 600px' }
+#menu1_id { border: yellow double 4px }
+#menu2_id { border: rgb(155,50,0) double 4px }
+#menu3_id { border: rgb(50,155,0) double 4px }
+#menu4_id { border: rgb(0,50,155) double 4px }
+#menu5_id { border: rgb(5,20,205) double 4px }
+#menu6_id { border: rgb(175,0,0) double 4px }
+#menu7_id { border: rgb(75,75,75) double 4px }
+#footer_id { border: green solid 14px;
+background: -moz-linear-gradient(top, #e6f0a3 0%, #d2e638 43%, #c3d825 60%, #dbf043 100%) repeat scroll 0% 0% transparent; }

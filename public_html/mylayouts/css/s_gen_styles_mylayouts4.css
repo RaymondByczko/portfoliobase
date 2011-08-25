@@ -1,0 +1,48 @@
+#masthead_id { 
+background: -moz-linear-gradient(top, #cc0000 0%, black 46%, black 47%, black 57%, #cc0000 100%) repeat scroll 0% 0% transparent; }
+#mcc_id {background: url(../mcc.png) }
+#trail_id {background: url(../trail.png) }
+#header_id { border: red double 4px }
+.hmenu { border: green double 4px; font-size: 8pt; color: white; text-align: center }
+#home_id { background: #3a7ab3; font-size: 8pt; text-align: center }
+#homeb_id { background: #004481 }
+#reports_id { background: #469cdc }
+#reportsb_id { background: #0065af }
+#devices_id {background:#37badd }
+#devicesb_id {background: #008eb4 }
+#nodes_id {background: #41b467 }
+#nodesb_id {background: #007e2a }
+#interfaces_id {background: #ff5353 }
+#interfacesb_id {background: #e30000 }
+#decode_id {background: #b84d94 }
+#decodeb_id {background: #7e0054 }
+#traffic_id {background: #ef894c }
+#trafficb_id {background: #c24a01 }
+#documentation_id {background: #f7ba4f }
+#documentationb_id {background: #cc8101 }
+#left_id { border: green double 4px }
+#menu1_id { border: yellow double 4px }
+#menu2_id { border: rgb(155,50,0) double 4px }
+#menu3_id { border: rgb(50,155,0) double 4px }
+#menu4_id { border: rgb(0,50,155) double 4px }
+#menu5_id { border: rgb(5,20,205) double 4px }
+#menu6_id { border: rgb(175,0,0) double 4px }
+#menu7_id { border: rgb(75,75,75) double 4px }
+#left_middle_id { border: blue solid 4px }
+#menu8_id { border: rgb(50,155,0) ridge 4px }
+#menu9_id { border: rgb(0,50,155) ridge 4px }
+#menu10_id { border: rgb(50,155,25) ridge 4px }
+#menu11_id { border: rgb(25,50,155) ridge 4px }
+#menu12_id { border: rgb(5,20,205) ridge 4px }
+#menu13_id { border: rgb(175,0,0) ridge 4px }
+#menu14_id { border: rgb(75,75,75) ridge 4px }
+#middle_id { border: red dashed 4px }
+#menu15_id { border: rgb(0,0,175) inset 4px }
+#menu16_id { border: rgb(0,175,0) inset 4px }
+#menu17_id { border: rgb(175,0,0) inset 4px }
+#menu18_id { border: rgb(50,175,0) inset 4px }
+#menu19_id { border: rgb(100,105,20) inset 4px }
+#menu20_id { border: rgb(20,105,150) inset 4px }
+#menu21_id { border: rgb(100,105,90) inset 4px }
+#footer_id { 
+background: -moz-linear-gradient(top, #efc5ca 0%, #d24b5a 11%, #ba2737 64%, #f18e99 100%) repeat scroll 0% 0% transparent; }

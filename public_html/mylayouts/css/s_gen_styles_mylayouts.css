@@ -1,0 +1,30 @@
+#masthead_id { background: #025bb5 }
+#raytoday_id {background: url(../rayt-logo.png) }
+#header_id { border: red double 4px }
+#button_area_id { border: green double 2px }
+.hmenu { border: green double 4px; font-size: 8pt; color: white; text-align: center }
+#home_id { background: #3a7ab3; font-size: 8pt; text-align: center }
+#homeb_id { background: #004481 }
+#news_id { background: #469cdc }
+#newsb_id { background: #0065af }
+#travel_id {background:#37badd }
+#travelb_id {background: #008eb4 }
+#money_id {background: #41b467 }
+#moneyb_id {background: #007e2a }
+#sports_id {background: #ff5353 }
+#sportsb_id {background: #e30000 }
+#life_id {background: #b84d94 }
+#lifeb_id {background: #7e0054 }
+#tech_id {background: #ef894c }
+#techb_id {background: #c24a01 }
+#weather_id {background: #f7ba4f }
+#weatherb_id {background: #cc8101 }
+#left_id { border: green double 4px; style:'position: absolute; top:138px; left:80px; width:50px; height: 600px' }
+#menu1_id { border: yellow double 4px }
+#menu2_id { border: rgb(155,50,0) double 4px }
+#menu3_id { border: rgb(50,155,0) double 4px }
+#menu4_id { border: rgb(0,50,155) double 4px }
+#menu5_id { border: rgb(5,20,205) double 4px }
+#menu6_id { border: rgb(175,0,0) double 4px }
+#menu7_id { border: rgb(75,75,75) double 4px }
+#footer_id { border: blue double 4px }
