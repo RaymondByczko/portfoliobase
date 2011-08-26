@@ -1,0 +1,14 @@
+RByczko, 2011-08-25, file: public_html/README
+
+The collection of directories and files associated with this
+README are for a website at HOME_URL/portfolio.  An index.php
+file at that path represents the home page of the website.
+
+The website is constructed such that HOME_URL/portfolio references
+other URLs under HOME_URL, like HOME_URL/mylayouts.  The idea is
+that HOME_URL/portfolio represents a big bucket that the developer
+can put his/her web work into.
+
+Additions to that bucket are developed in general by sequential
+means, and then 'added' to the bucket.  This addition process
+is by modifying the javascript menu structure that is present.
