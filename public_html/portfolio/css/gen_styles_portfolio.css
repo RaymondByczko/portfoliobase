@@ -1,7 +1,11 @@
+<!-- @company self -->
+<!-- @author Raymond Byczko -->
+<!-- @change_history self-RByczko, 2013-06-09 June 9, Adjusted masthead for chromium. -->
 li {display: none; }
 #masthead_id { 
 
-background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 65%, #383838 87%, #1b1b1b 100%) repeat scroll 0% 0% transparent; }
+background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 65%, #383838 87%, #1b1b1b 100%) repeat scroll 0% 0% transparent; 
+background: -webkit-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 65%, #383838 87%, #1b1b1b 100%) repeat scroll 0% 0% transparent; }
 #rp_id {background: url(../images/rp.png) }
 #trail_id {background: url(../images/trail.png) }
 #header_id { border: red double 4px }

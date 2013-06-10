@@ -10,6 +10,7 @@
 	Note1: make sure to adjust the settings in the *Home javascript
 	functions to insure this code is properly set with regard to 
 	its Home (i.e. development or published).
+	change history: self-RByczko, 2013-06-09 June 9, Added code for toolboxhtml5.
 
 
 -->
@@ -44,6 +45,13 @@ function getmyhtml5Home()
 	// return "http://myhtml5.dev/";
 	// The published setting.
 	return "http://www.lunarrays.com/myhtml5/";
+};
+function gettoolboxhtml5Home()
+{
+	// The development setting.
+	// return "http://toolboxhtml5.dev/";
+	// The published setting.
+	return "http://toolboxhtml5.lunarrays.com/";
 };
 </script>
 <title>rayPortfolio</title>
@@ -382,10 +390,12 @@ function CWhatsNew()
 	{
 		menuItem1 = '<div id=whatsnew_submenu_e1_id class=whatsnwmenu style=\'position:absolute; top: 0px; left: 380px; width: 100px; height: 13px\'>HTML5</div>';
 
-		menuItem2 = '<div id=phpmisc_submenu_e2_id class=whatsnwmenu style=\'position:absolute; top: 16px; left: 280px; width: 100px; height: 13px\'>Second_notused</div>';
+		menuItem2 = '<div id=whatsnew_submenu_e2_id class=whatsnwmenu style=\'position:absolute; top: 16px; left: 380px; width: 100px; height: 13px\'>toolboxhtml5</div>';
+
+		menuItem3 = '<div id=whatsnew_submenu_e3_id class=whatsnwmenu style=\'position:absolute; top: 32px; left: 380px; width: 100px; height: 13px\'>Third_notused</div>';
 
 		// retValue = menuItem1 + menuItem2 + menuItem3;
-		retValue = menuItem1;
+		retValue = menuItem1 + menuItem2;
 		return retValue;
 	}
 	this.submenu = whatsnew_submenu;
@@ -437,6 +447,9 @@ $('#whatsnew_id').click(function () {
 	myhtml5Home = getmyhtml5Home();
 	$('#whatsnew_submenu_e1_id').click(function() {
 		location.href = myhtml5Home + "first.php";
+	});
+	$('#whatsnew_submenu_e2_id').click(function() {
+		location.href = gettoolboxhtml5Home();
 	});
 });
 
