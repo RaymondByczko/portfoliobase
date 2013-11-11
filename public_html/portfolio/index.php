@@ -98,24 +98,24 @@ function gettoolboxhtml5Home()
 	This fits perfectly for the menu items within the outer left
 	division.  RByczko 12-26-10
 -->
-<div id=left_id style='position: absolute; top:144px; left: 0px; width: 50px; height: 300px' >
-<div id=menu1_id style='position: absolute; top: 0px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu2_id style='position: absolute; top: 28px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu3_id style='position: absolute; top: 56px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu4_id style='position: absolute; top: 84px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu5_id style='position: absolute; top: 112px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu6_id style='position: absolute; top: 140px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu7_id style='position: absolute; top: 168px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu8_id style='position: absolute; top: 196px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu9_id style='position: absolute; top: 224px; left:0px; width: 42px; height: 20px' ></div>
-<div id=menu10_id style='position: absolute; top: 252px; left:0px; width: 42px; height: 20px' ></div>
+<div id=left_id style='position: absolute; top:144px; left: 0px; width: 58px; height: 300px' >
+<div id=menu1_id style='position: absolute; top: 0px; left:0px; width: 50px; height: 20px' >app17b</div>
+<div id=menu2_id style='position: absolute; top: 28px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu3_id style='position: absolute; top: 56px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu4_id style='position: absolute; top: 84px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu5_id style='position: absolute; top: 112px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu6_id style='position: absolute; top: 140px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu7_id style='position: absolute; top: 168px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu8_id style='position: absolute; top: 196px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu9_id style='position: absolute; top: 224px; left:0px; width: 50px; height: 20px' ></div>
+<div id=menu10_id style='position: absolute; top: 252px; left:0px; width: 50px; height: 20px' ></div>
 
 </div>
 <!-- 
 	left of left_middle_id is set to 58px because width of left_id is set 50px and
 	the border of left_id is set to 4px.  So 2 times 4px plus 50px is equal to 58px.
 -->
-<div id=left_middle_id style='position: absolute; top: 144px; left: 58px; width: 676px; height: 300px' >
+<div id=left_middle_id style='position: absolute; top: 144px; left: 64px; width: 668px; height: 300px' >
 </div>
 <div id=middle_id style='position: absolute; top: 144px; left: 742px; width: 122px; height: 300px'>
 </div>
@@ -125,6 +125,7 @@ function gettoolboxhtml5Home()
 <script language="JavaScript" type="text/javascript" >
 $('#menu1_id').click(function() {
   alert('Handler for .click() called.');
+  location.href="/portfolio/app/app17b/AJS_B.html";
 });
 
 // This section of code allows the top selection to become such that

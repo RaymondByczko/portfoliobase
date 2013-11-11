@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Learning more javascript! Now!</title>
+</head>
+<body>
+<script type="text/javascript" >
+document.write("Welcome to AllJavaScript");
+checkForMyTestFunction();
+displayImage();
+var obj1MCC = new MyCounterClass();
+var obj2MCC = new MyCounterClass();
+obj1MCC.IncreaseCount();
+obj1MCC.IncreaseCount();
+obj1MCC.IncreaseCount();
+obj2MCC.IncreaseCount();
+obj2MCC.IncreaseCount();
+var curCt1 = obj1MCC.GetCount();
+window.alert("curCt, for obj1MCC, =" + curCt1);
+var curCt2 = obj2MCC.GetCount();
+window.alert("curCt2, for obj2MCC, =" + curCt2);
+
+
+if (1==1)
+{
+	MyDerivedClass.prototype = new MyCounterClass();
+	var obj1MDC = new MyDerivedClass();
+	obj1MDC.LargeIncrement();
+	obj1MDC.IncreaseCount();
+	var curCtMDC = obj1MDC.GetCount();
+}
+
+window.alert("curCtMDC, for obj1MDC, =" + curCtMDC);
+
+function myTestFunction()
+{
+	window.alert("Called within myTestFunction");
+}
+function checkForMyTestFunction()
+{
+	if (myTestFunction)
+	{
+		window.alert("myTestFunction exists");
+	}
+	else {
+		window.alert("myTestFunction does not exist");
+	}
+}	
+function displayImage()
+{
+	document.write("<img src=\"HPIM4824.JPG?" + Math.random() + "\" />");
+}
+function MyCounterClass()
+{
+	var m_count = 0;
+	function _MyCounterClass()
+	{
+		m_count = 0;
+	}	
+	this.MyCounterClass = _MyCounterClass;
+	function _getCount()
+	{
+		return m_count;
+	}
+	this.GetCount = _getCount;
+	function _increaseCount()
+	{
+		m_count = m_count + 1;
+	}
+	this.IncreaseCount = _increaseCount;
+	function _mcc_reset()
+	{
+		m_count = 0;
+	}
+	this.Mcc_reset = _mcc_reset;
+}
+function MyDerivedClass()
+{
+	// this.MyDerivedClass.prototype = new MyCounterClass();
+	function _largeIncrement()
+	{
+		this.IncreaseCount();
+		this.IncreaseCount();
+		this.IncreaseCount();
+		this.IncreaseCount();
+		this.IncreaseCount();
+	}
+	this.LargeIncrement = _largeIncrement;
+}
+if (0==1)
+{
+	MyDerivedClass.prototype = new MyCounterClass();
+	var obj1MDC = new MyDerivedClass();
+	obj1MDC.LargeIncrement();
+	obj1MDC.IncreaseCount();
+	var curCtMDC = obj1MDC.GetCount();
+}
+var sayHi = new Function("name", "window.alert('Hey ' + name);");
+sayHi("RayB");
+function CapitalizeString()
+{
+	var str = String("all lower case");
+	// http://www.quirksmode.org/js/strings.html#tocase
+	str = str.toUpperCase();
+	window.alert("str = " + str);
+}
+CapitalizeString();
+function LowerCaseThePrimitiveString()
+{
+	var myString = "Some UPPer case IS heRE";
+	var myLCString = myString.toLowerCase();
+	window.alert("myLCString = " + myLCString);
+}
+LowerCaseThePrimitiveString();
+function NonVariableStringReplacement()
+{
+	var replaceXYZ = "My name is XYZ B!".replace(/XYZ/, "Ray");
+	window.alert("replaceXYZ (post replace) = " + replaceXYZ);
+}
+NonVariableStringReplacement();
+
+var funcMultiply4Numbers = function(a,b,c,d)
+{
+	var result = a*b*c*d;
+	return result;
+}
+function Present4NumberMultiply()
+{
+	var answer = funcMultiply4Numbers(1,2,3,4);
+	window.alert("Present4NumberMultiply: answer = " + answer);
+}
+Present4NumberMultiply();
+var functAdd4Numbers = function(w,x,y,z)
+{
+	var result = w + x + y + z;
+	return result;
+}
+function DoSomethingWith4Numbers(e,f,g,h, somethingFunction)
+{
+	var result = somethingFunction(e,f,g,h);
+	window.alert("DoSomethingWith4Numbers: result = " + result);
+	return "doSuccess";
+}
+
+var doResult1 = DoSomethingWith4Numbers(10,10,10,10, funcMultiply4Numbers);
+window.alert("doResult = " + doResult1);
+</script>
+<pre>Some text in case</pre>
+</body>
+</html>
