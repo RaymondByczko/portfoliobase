@@ -8,6 +8,7 @@
 	November 11, 2013 - added app18a.
 	November 11, 2013 - added app9.
 	November 11, 2013 - added app8.
+	November 11, 2013 - added app7.
 	purpose: to provide a front end for my portfolio.
 
 	Note1: make sure to adjust the settings in the *Home javascript
@@ -108,8 +109,8 @@ function gettoolboxhtml5Home()
 <div id=menu4_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' >style03</div>
 <div id=menu5_id style='position: absolute; top: 112px; left:0px; width: 80px; height: 20px' >style01</div>
 <div id=menu6_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' >style02</div>
-<div id=menu7_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' ></div>
-<div id=menu8_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu7_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' >array1</div>
+<div id=menu8_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >array2</div>
 <div id=menu9_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' ></div>
 <div id=menu10_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' ></div>
 
@@ -149,6 +150,14 @@ $('#menu5_id').click(function() {
 $('#menu6_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app8/style02.html";
+});
+$('#menu7_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app7/array1.php";
+});
+$('#menu8_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app7/array2.php";
 });
 
 // This section of code allows the top selection to become such that
