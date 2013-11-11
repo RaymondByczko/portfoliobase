@@ -5,6 +5,7 @@
 	further work dates: February 2, 2011 - made JavaScript enhancement
 		to allow easy movement of code from development to published
 		state.
+	November 11, 2013 - added app18a.
 	purpose: to provide a front end for my portfolio.
 
 	Note1: make sure to adjust the settings in the *Home javascript
@@ -98,24 +99,24 @@ function gettoolboxhtml5Home()
 	This fits perfectly for the menu items within the outer left
 	division.  RByczko 12-26-10
 -->
-<div id=left_id style='position: absolute; top:144px; left: 0px; width: 58px; height: 300px' >
-<div id=menu1_id style='position: absolute; top: 0px; left:0px; width: 50px; height: 20px' >app17b</div>
-<div id=menu2_id style='position: absolute; top: 28px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu3_id style='position: absolute; top: 56px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu4_id style='position: absolute; top: 84px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu5_id style='position: absolute; top: 112px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu6_id style='position: absolute; top: 140px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu7_id style='position: absolute; top: 168px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu8_id style='position: absolute; top: 196px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu9_id style='position: absolute; top: 224px; left:0px; width: 50px; height: 20px' ></div>
-<div id=menu10_id style='position: absolute; top: 252px; left:0px; width: 50px; height: 20px' ></div>
+<div id=left_id class="sidebuttons" style='position: absolute; top:144px; left: 0px; width: 88px; height: 300px' >
+<div id=menu1_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >app17b</div>
+<div id=menu2_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >MyMooTools18</div>
+<div id=menu3_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >MyMooTools19</div>
+<div id=menu4_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu5_id style='position: absolute; top: 112px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu6_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu7_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu8_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu9_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu10_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' ></div>
 
 </div>
 <!-- 
 	left of left_middle_id is set to 58px because width of left_id is set 50px and
 	the border of left_id is set to 4px.  So 2 times 4px plus 50px is equal to 58px.
 -->
-<div id=left_middle_id style='position: absolute; top: 144px; left: 64px; width: 668px; height: 300px' >
+<div id=left_middle_id style='position: absolute; top: 144px; left: 94px; width: 638px; height: 300px' >
 </div>
 <div id=middle_id style='position: absolute; top: 144px; left: 742px; width: 122px; height: 300px'>
 </div>
@@ -126,6 +127,14 @@ function gettoolboxhtml5Home()
 $('#menu1_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app17b/AJS_B.html";
+});
+$('#menu2_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app18a/MyMooTools18.php";
+});
+$('#menu3_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app18a/MyMooTools19.php";
 });
 
 // This section of code allows the top selection to become such that
