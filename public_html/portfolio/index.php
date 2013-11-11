@@ -6,6 +6,7 @@
 		to allow easy movement of code from development to published
 		state.
 	November 11, 2013 - added app18a.
+	November 11, 2013 - added app9.
 	purpose: to provide a front end for my portfolio.
 
 	Note1: make sure to adjust the settings in the *Home javascript
@@ -103,7 +104,7 @@ function gettoolboxhtml5Home()
 <div id=menu1_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >app17b</div>
 <div id=menu2_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >MyMooTools18</div>
 <div id=menu3_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >MyMooTools19</div>
-<div id=menu4_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' ></div>
+<div id=menu4_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' >style03</div>
 <div id=menu5_id style='position: absolute; top: 112px; left:0px; width: 80px; height: 20px' ></div>
 <div id=menu6_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' ></div>
 <div id=menu7_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' ></div>
@@ -135,6 +136,10 @@ $('#menu2_id').click(function() {
 $('#menu3_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app18a/MyMooTools19.php";
+});
+$('#menu4_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app9/style03.html";
 });
 
 // This section of code allows the top selection to become such that
