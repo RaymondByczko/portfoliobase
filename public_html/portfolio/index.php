@@ -10,6 +10,7 @@
 	November 11, 2013 - added app8.
 	November 11, 2013 - added app7.
 	November 11, 2013 - added app6.
+	November 17, 2013 - added app5.
 	purpose: to provide a front end for my portfolio.
 
 	Note1: make sure to adjust the settings in the *Home javascript
@@ -103,7 +104,7 @@ function gettoolboxhtml5Home()
 	This fits perfectly for the menu items within the outer left
 	division.  RByczko 12-26-10
 -->
-<div id=left_id class="sidebuttons" style='position: absolute; top:144px; left: 0px; width: 88px; height: 300px' >
+<div id=left_a_id class="sidebuttons" style='position: absolute; top:144px; left: 0px; width: 88px; height: 300px' >
 <div id=menu1_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >app17b</div>
 <div id=menu2_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >MyMooTools18</div>
 <div id=menu3_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >MyMooTools19</div>
@@ -116,11 +117,26 @@ function gettoolboxhtml5Home()
 <div id=menu10_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >nuserver</div>
 
 </div>
+
+
+<div id=left_b_id class="sidebuttons" style='position: absolute; top:144px; left: 96px; width: 88px; height: 300px' >
+<div id=menu11_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >phpinfopwd</div>
+<div id=menu12_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >ming1</div>
+<div id=menu13_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >vac13</div>
+<div id=menu14_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' >vac14</div>
+<div id=menu15_id style='position: absolute; top: 112px; left:0px; width: 80px; height: 20px' >vac15</div>
+<div id=menu16_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' >vac16</div>
+<div id=menu17_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' >vac17</div>
+<div id=menu18_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >vac18</div>
+<div id=menu19_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >vac19</div>
+<div id=menu20_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >vac20</div>
+
+</div>
 <!-- 
 	left of left_middle_id is set to 58px because width of left_id is set 50px and
 	the border of left_id is set to 4px.  So 2 times 4px plus 50px is equal to 58px.
 -->
-<div id=left_middle_id style='position: absolute; top: 144px; left: 94px; width: 638px; height: 300px' >
+<div id=left_middle_id style='position: absolute; top: 144px; left: 192px; width: 544px; height: 300px' >
 </div>
 <div id=middle_id style='position: absolute; top: 144px; left: 742px; width: 122px; height: 300px'>
 </div>
@@ -167,6 +183,14 @@ $('#menu9_id').click(function() {
 $('#menu10_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app6/nuserver.php";
+});
+$('#menu11_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app5/phpinfopwd.php";
+});
+$('#menu12_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app5/ming1.php";
 });
 
 // This section of code allows the top selection to become such that

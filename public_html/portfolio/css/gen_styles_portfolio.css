@@ -1,6 +1,7 @@
 <!-- @company self -->
 <!-- @author Raymond Byczko -->
 <!-- @change_history self-RByczko, 2013-06-09 June 9, Adjusted masthead for chromium. -->
+<!-- @change_history self-RByczko, 2013-11-16 Nov 17, Added css for new menu items. -->
 li {display: none; }
 #masthead_id { 
 
@@ -32,7 +33,8 @@ background: -webkit-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #
 #shareb_id {background: #c24a01 }
 #documentation_id {background: #f7ba4f }
 #documentationb_id {background: #cc8101 }
-#left_id { border: green double 4px }
+#left_a_id { border: green double 4px }
+#left_b_id { border: green double 4px }
 #menu1_id { border: yellow double 4px }
 #menu2_id { border: rgb(155,50,0) double 4px }
 #menu3_id { border: rgb(50,155,0) double 4px }
@@ -43,6 +45,16 @@ background: -webkit-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #
 #menu8_id { border: rgb(50,155,0) ridge 4px }
 #menu9_id { border: rgb(0,50,155) ridge 4px }
 #menu10_id { border: rgb(50,155,25) ridge 4px }
+#menu11_id { border: green double 4px }
+#menu12_id { border: rgb(155,50,0) double 4px }
+#menu13_id { border: rgb(50,155,0) double 4px }
+#menu14_id { border: rgb(20,60,100) double 4px }
+#menu15_id { border: rgb(50,20,100) double 4px }
+#menu16_id { border: rgb(75,75,75) double 4px }
+#menu17_id { border: rgb(175,0,0) double 4px }
+#menu18_id { border: rgb(50,155,0) ridge 4px }
+#menu19_id { border: rgb(0,50,155) ridge 4px }
+#menu20_id { border: rgb(50,155,25) ridge 4px }
 #left_middle_id { border: blue solid 4px }
 #middle_id { border: red dashed 4px }
 #footer_id { 
