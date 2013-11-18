@@ -15,6 +15,7 @@
 	November 17, 2013 - added app50.
 	November 17, 2013 - added app10.
 	November 17, 2013 - added app12.
+	November 18, 2013 - added app15.
 	purpose: to provide a front end for my portfolio.
 
 	Note1: make sure to adjust the settings in the *Home javascript
@@ -132,7 +133,7 @@ function gettoolboxhtml5Home()
 <div id=menu16_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' >phpinfopwd</div>
 <div id=menu17_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' >style04</div>
 <div id=menu18_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >app12</div>
-<div id=menu19_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >vac19</div>
+<div id=menu19_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >app15</div>
 <div id=menu20_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >vac20</div>
 
 </div>
@@ -219,6 +220,10 @@ $('#menu17_id').click(function() {
 $('#menu18_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app12/index.php";
+});
+$('#menu19_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app15/phpapachemods.php";
 });
 
 // This section of code allows the top selection to become such that
