@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Learning more javascript! AJS_C.html</title>
+</head>
+<body>
+<!-- type="text/javascript" src="mootools-1.2.4-core-nc.js" ></script> -->
+ type="text/javascript" >
+document.write("Welcome to AllJavaScript");
+displayImage();
+var obj1MCC = new MyCounterClass();
+obj1MCC.IncreaseCount();
+var curCt1 = obj1MCC.GetCount();
+window.alert("curCt, for obj1MCC, =" + curCt1);
+
+
+if (1==1)
+{
+	MyDerivedClass.prototype = new MyCounterClass();
+	var obj1MDC = new MyDerivedClass();
+	obj1MDC.LargeIncrement();
+	obj1MDC.IncreaseCount();
+	var curCtMDC = obj1MDC.GetCount();
+}
+
+window.alert("curCtMDC, for obj1MDC, =" + curCtMDC);
+
+function displayImage()
+{
+	document.write("<img src=\"HPIM4824.JPG?" + Math.random() + "\" />");
+}
+function MyCounterClass()
+{
+	var m_count = 0;
+	function _MyCounterClass()
+	{
+		m_count = 0;
+	}	
+	this.MyCounterClass = _MyCounterClass;
+	function _getCount()
+	{
+		return m_count;
+	}
+	this.GetCount = _getCount;
+	function _increaseCount()
+	{
+		m_count = m_count + 1;
+	}
+	this.IncreaseCount = _increaseCount;
+	function _mcc_reset()
+	{
+		m_count = 0;
+	}
+	this.Mcc_reset = _mcc_reset;
+}
+function MyDerivedClass()
+{
+	function _largeIncrement()
+	{
+		this.IncreaseCount();
+		this.IncreaseCount();
+		this.IncreaseCount();
+		this.IncreaseCount();
+		this.IncreaseCount();
+	}
+	this.LargeIncrement = _largeIncrement;
+}
+if (0==1)
+{
+	MyDerivedClass.prototype = new MyCounterClass();
+	var obj1MDC = new MyDerivedClass();
+	obj1MDC.LargeIncrement();
+	obj1MDC.IncreaseCount();
+	var curCtMDC = obj1MDC.GetCount();
+}
+var FishEquipment = { 'rod': 'Fenwick', 'reel': 'Penn' };
+window.alert("My rod is " + FishEquipment['rod']);
+var MyNative = function(someOptions)
+{
+	window.alert("Start of MyNative");
+	theOptions = someOptions||{};
+	var myRod = theOptions.rod;
+	var myReel = theOptions.reel;
+	window.alert("myRod = " + myRod);
+}
+MyNative();
+var AnyOptions = { 'rod': 'Shakespeare', 'reel': 'Daiwa' };
+MyNative(AnyOptions);
+function EqualityFunction()
+{
+	var sOneThousand = "1000";
+	var iOneThousand = 1000;
+	if (sOneThousand == iOneThousand) {
+		window.alert("The string and integers compare as equals for double equal");
+	}
+	else {
+		window.alert("The string and integers compare as not equal for double equal");
+	}
+}
+EqualityFunction();
+function IdentityFunction()
+{
+	var sOneHundred = "101";
+	var iOneHundred = 101;
+	if (sOneHundred === iOneHundred) {
+		window.alert("The string and integers compare as equals for triple equal");
+	}
+	else {
+		window.alert("The string and integers compare as not equal for triple equal");
+	}
+}
+IdentityFunction();
+function SomeORfunction()
+{
+	var myFish = "bluegill";
+	var yourFish = "catfish";
+	var hisFish = "Bluegill";
+	var theirFish = "bluefish";
+	var oneBluegill = (myFish.toLowerCase() == "bluegill")||(yourFish.toLowerCase() == "bluegill");
+	window.alert("oneBluegill is " + oneBluegill);
+	var oneBluegill2 = (yourFish.toLowerCase() == "bluegill")||(theirFish.toLowerCase() == "bluegill");
+	window.alert("oneBluegill2 = " + oneBluegill2);
+}
+SomeORfunction();
+function $TestForExistence1(arg)
+{
+	// var bItExists = !!(fooDoesntExist);
+	var bItExists;
+	if (typeof(arg) != 'undefined')
+	{
+		bItExists = true;
+	} else
+	{
+		bItExists = false;
+	}
+	window.alert("bItExists = " + bItExists);
+}
+window.alert("Before fooDoesntExist");
+$TestForExistence1(window.fooDoesntExist);
+var ThisExists = 2010;
+window.alert("Before ThisExists");
+$TestForExistence1(window.ThisExists);
+</script>
+<pre>Some text in case</pre>
+</body>
+</html>
