@@ -17,6 +17,7 @@
 	November 17, 2013 - added app12.
 	November 18, 2013 - added app15.
 	November 19, 2013 - added app17c.
+	November 24, 2013 - added app16. Accordingly added third col of sidebuttons.
 	purpose: to provide a front end for my portfolio.
 
 	Note1: make sure to adjust the settings in the *Home javascript
@@ -138,13 +139,26 @@ function gettoolboxhtml5Home()
 <div id=menu20_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >app17c</div>
 
 </div>
+<div id=left_c_id class="sidebuttons" style='position: absolute; top:144px; left: 192px; width: 88px; height: 300px' >
+<div id=menu21_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >app16</div>
+<div id=menu22_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu23_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu24_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu25_id style='position: absolute; top: 112px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu26_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu27_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu28_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu29_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu30_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >vac</div>
+
+</div>
 <!-- 
 	left of left_middle_id is set to 58px because width of left_id is set 50px and
 	the border of left_id is set to 4px.  So 2 times 4px plus 50px is equal to 58px.
 -->
-<div id=left_middle_id style='position: absolute; top: 144px; left: 192px; width: 544px; height: 300px' >
+<div id=left_middle_id style='position: absolute; top: 144px; left: 288px; width: 452px; height: 300px' >
 </div>
-<div id=middle_id style='position: absolute; top: 144px; left: 742px; width: 122px; height: 300px'>
+<div id=middle_id style='position: absolute; top: 144px; left: 748px; width: 116px; height: 300px'>
 </div>
 <div id=footer_id style='position: absolute; top:452px; left:0px; width:872px; height: 50px'>
 </div>
@@ -229,6 +243,10 @@ $('#menu19_id').click(function() {
 $('#menu20_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app17c/AJS_C.html";
+});
+$('#menu21_id').click(function() {
+  alert('Handler for .click() called.');
+  location.href="/portfolio/app/app16/first.html";
 });
 
 // This section of code allows the top selection to become such that
