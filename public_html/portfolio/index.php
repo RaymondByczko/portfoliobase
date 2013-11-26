@@ -18,6 +18,7 @@
 	November 18, 2013 - added app15.
 	November 19, 2013 - added app17c.
 	November 24, 2013 - added app16. Accordingly added third col of sidebuttons.
+	November 25, 2013 - started 'more..' functionality.  Need to add 'less..'.
 	purpose: to provide a front end for my portfolio.
 
 	Note1: make sure to adjust the settings in the *Home javascript
@@ -111,7 +112,7 @@ function gettoolboxhtml5Home()
 	This fits perfectly for the menu items within the outer left
 	division.  RByczko 12-26-10
 -->
-<div id=left_a_id class="sidebuttons" style='position: absolute; top:144px; left: 0px; width: 88px; height: 300px' >
+<div id=left_a_id class="sidebuttons" style='position: absolute; top:144px; left: 0px; width: 88px; height: 308px' >
 <div id=menu1_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >app17b</div>
 <div id=menu2_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >MyMooTools18</div>
 <div id=menu3_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >MyMooTools19</div>
@@ -122,11 +123,11 @@ function gettoolboxhtml5Home()
 <div id=menu8_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >array2</div>
 <div id=menu9_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >nuclient</div>
 <div id=menu10_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >nuserver</div>
-
+<div id=menumore1_id style='position: absolute; top: 280px; left:0px; width: 80px; height: 20px' >more..</div>
 </div>
 
 
-<div id=left_b_id class="sidebuttons" style='position: absolute; top:144px; left: 96px; width: 88px; height: 300px' >
+<div id=left_b_id class="sidebuttons" style='display: none; position: absolute; top:144px; left: 96px; width: 88px; height: 308px' >
 <div id=menu11_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >phpinfopwd</div>
 <div id=menu12_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >ming1</div>
 <div id=menu13_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >jqueryhelloworld</div>
@@ -137,9 +138,10 @@ function gettoolboxhtml5Home()
 <div id=menu18_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >app12</div>
 <div id=menu19_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >app15</div>
 <div id=menu20_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >app17c</div>
+<div id=menumore2_id style='position: absolute; top: 280px; left:0px; width: 80px; height: 20px' >more..</div>
 
 </div>
-<div id=left_c_id class="sidebuttons" style='position: absolute; top:144px; left: 192px; width: 88px; height: 300px' >
+<div id=left_c_id class="sidebuttons" style='display: none; position: absolute; top:144px; left: 192px; width: 88px; height: 308px' >
 <div id=menu21_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >app16</div>
 <div id=menu22_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >vac</div>
 <div id=menu23_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >vac</div>
@@ -156,9 +158,9 @@ function gettoolboxhtml5Home()
 	left of left_middle_id is set to 58px because width of left_id is set 50px and
 	the border of left_id is set to 4px.  So 2 times 4px plus 50px is equal to 58px.
 -->
-<div id=left_middle_id style='position: absolute; top: 144px; left: 288px; width: 452px; height: 300px' >
+<div id=left_middle_id style='position: absolute; top: 144px; left: 96px; width: 644px; height: 308px' >
 </div>
-<div id=middle_id style='position: absolute; top: 144px; left: 748px; width: 116px; height: 300px'>
+<div id=middle_id style='position: absolute; top: 144px; left: 748px; width: 116px; height: 308px'>
 </div>
 <div id=footer_id style='position: absolute; top:452px; left:0px; width:872px; height: 50px'>
 </div>
@@ -204,6 +206,39 @@ $('#menu10_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app6/nuserver.php";
 });
+$('#menumore1_id').click(function() {
+
+  $('#left_b_id').show();
+
+  if (0==1)
+  {
+    // This way does not work
+    $('#left_middle_id').attr('left', '192px');
+    $('#left_middle_id').attr('width', '548px');
+  }
+  if (1==1)
+  {
+    // This way works
+    $('#left_middle_id').css('left', '192px');
+    $('#left_middle_id').css('width', '548px');
+  }
+
+  if (0==1)
+  {
+    // This way works.
+
+    var off_lmi = $('#left_middle_id').offset();
+    var leftvalue = 192;
+    var topvalue = off_lmi.top;
+    var newoffset = {
+	top: topvalue,
+	left: leftvalue
+    }
+    $('#left_middle_id').offset(newoffset);
+    $('#left_middle_id').width(548);
+  }
+  
+});
 $('#menu11_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app5/phpinfopwd.php";
@@ -247,6 +282,12 @@ $('#menu20_id').click(function() {
 $('#menu21_id').click(function() {
   alert('Handler for .click() called.');
   location.href="/portfolio/app/app16/first.html";
+});
+
+$('#menumore2_id').click(function() {
+  $('#left_c_id').show();
+  $('#left_middle_id').css('left', '288px');
+  $('#left_middle_id').css('width', '452px');
 });
 
 // This section of code allows the top selection to become such that

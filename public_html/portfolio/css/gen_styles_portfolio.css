@@ -1,8 +1,9 @@
 <!-- @company self -->
 <!-- @author Raymond Byczko -->
 <!-- @change_history self-RByczko, 2013-06-09 June 9, Adjusted masthead for chromium. -->
-<!-- @change_history self-RByczko, 2013-11-16 Nov 17, Added css for new menu items. -->
-<!-- @change_history self-RByczko, 2013-11-24 Nov 24, Added css for new menu items. -->
+<!-- @change_history self-RByczko, 2013-11-16 Nov 17, Added css for new menu items.   -->
+<!-- @change_history self-RByczko, 2013-11-24 Nov 24, Added css for new menu items.   -->
+<!-- @change_history self-RByczko, 2013-11-25 Nov 25, Started 'more..' functionality. -->
 li {display: none; }
 #masthead_id { 
 
@@ -47,6 +48,8 @@ background: -webkit-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #
 #menu8_id { border: rgb(50,155,0) ridge 4px }
 #menu9_id { border: rgb(0,50,155) ridge 4px }
 #menu10_id { border: rgb(50,155,25) ridge 4px }
+#menumore1_id { border: rgb(10,100,10) ridge 4px }
+#menumore2_id { border: rgb(70,10,70) ridge 4px }
 #menu11_id { border: green double 4px }
 #menu12_id { border: rgb(155,50,0) double 4px }
 #menu13_id { border: rgb(50,155,0) double 4px }
