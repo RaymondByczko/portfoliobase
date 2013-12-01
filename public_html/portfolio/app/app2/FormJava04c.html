@@ -1,0 +1,75 @@
+<html>
+<!--
+	author: Raymond Byczko
+	date: 11=6-2008
+	purpose: This code snippet displays the use of DOM childNode info and allows
+	one to traverse into a hierarchy.  Here, I traverse the form I created.
+
+	This code ??? for demo.
+
+	This code can be seen at the following URL:
+
+		http://www.lunarrays.com/app2/FormJava04c.html?x=111113222
+-->
+<head><title>The 04b title</title>
+ type="text/javascript">
+function showCheckBoxStuff(theId)
+{
+	window.alert(document.getElementById(theId).checked);
+}
+
+function showDOMStuff()
+{
+
+	var len = document.getElementById('id_rays_form').childNodes[0].childNodes.length;
+	window.alert(len);
+	var len2 = document.getElementById('id_rays_form').childNodes.length;
+	window.alert(len2);
+	for (i=0; i < len2; i++)
+	{
+		var na0 = document.getElementById('id_rays_form').childNodes[i].nodeName;
+		window.alert("i=" + i +  "; nodeName: " + na0);
+		var na0value = document.getElementById('id_rays_form').childNodes[i].nodeValue;
+		window.alert("i=" + i +  "; nodeValue: " + na0value);
+		var na0type = document.getElementById('id_rays_form').childNodes[i].nodeType;
+		window.alert("i=" + i +  "; nodeType: " + na0type);
+
+		var numChildren = document.getElementById('id_rays_form').childNodes[i].childNodes.length;
+		window.alert("i=" + i +  "; numChildren: " + numChildren);
+
+		var na0attr = document.getElementById('id_rays_form').childNodes[i].attributes;
+		window.alert("i=" + i +  "; attributes: " + na0attr);
+
+		var na0attrlen = document.getElementById('id_rays_form').childNodes[i].attributes.name;
+		window.alert("i=" + i +  "; attributes length: " + na0attrlen);
+
+	}
+	return;
+}
+function showDOMStuff2()
+{
+}
+function changeDOMStuff()
+{
+	document.getElementById('id_rays_form').childNodes[0].childNodes[1].nodeValue = "bbraided";
+}
+
+</script>
+</head>
+<body>
+<form name="rays_form_with_cbox" id="id_rays_form" >
+	<input type="checkbox" name="fishing_lines" id="id_braided" />Braided
+	<br>
+	<input type="checkbox" name="fishing_lines" id="id_mono" />Mono
+	<br>
+	<input type="checkbox" name="fishing_lines" id="id_leadcore" />Leadcore
+	<br>
+	<input type="button" value="Show state of chkbox" 
+		onclick="showCheckBoxStuff('id_mono');" />
+	<input type="button" value="Show DOM stuff" 
+		onclick="showDOMStuff();" />
+	<input type="button" value="Change DOM stuff" 
+		onclick="changeDOMStuff();" />
+</form>
+</body>
+</html>

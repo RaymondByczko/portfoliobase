@@ -1,0 +1,11 @@
+ type="text/javascript">
+function showText(nf, nam)
+{
+	window.alert(document.forms[nf].elements[nam].value);
+}
+</script>
+<form name="rays_form">
+	<input type="text" name="textfield" />
+	<input type="button" value="Show text"
+		onclick="showText('rays_form', 'textfield');" />
+</form>

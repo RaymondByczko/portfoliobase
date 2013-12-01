@@ -1,0 +1,70 @@
+<html>
+<head><title>The 04b title</title>
+ type="text/javascript">
+function showCheckBoxStuff(theId)
+{
+	window.alert(document.getElementById(theId).checked);
+}
+
+function showDOMStuff()
+{
+
+	var len = document.getElementById('id_rays_form').childNodes[0].childNodes.length;
+	window.alert(len);
+	var len2 = document.getElementById('id_rays_form').childNodes.length;
+	window.alert(len2);
+	for (i=0; i < len2; i++)
+	{
+		var na0 = document.getElementById('id_rays_form').childNodes[i].nodeName;
+		window.alert("i=" + i +  "; nodeName: " + na0);
+		var na0value = document.getElementById('id_rays_form').childNodes[i].nodeValue;
+		window.alert("i=" + i +  "; nodeValue: " + na0value);
+	}
+	// return;
+
+	// var na = document.getElementById('id_rays_form').childNodes[0].childNodes[0].nodeName;
+	return;
+	var na2 = document.getElementById('id_rays_form').childNodes[0].childNodes[1].nodeName;
+	var na2value = document.getElementById('id_rays_form').childNodes[0].childNodes[1].nodeValue;
+	// return;
+
+	var na3 = document.getElementById('id_rays_form').childNodes[0].childNodes[2].nodeName;
+	var na4 = document.getElementById('id_rays_form').childNodes[0].childNodes[3].nodeName;
+
+
+	// var na13 = document.getElementById('id_rays_form').childNodes[0].childNodes[12].nodeName;
+
+	window.alert(na);
+	window.alert(na2);
+	window.alert(na2value);
+	window.alert(na3);
+	window.alert(na4);
+	// window.alert(na13);
+}
+function showDOMStuff2()
+{
+}
+function changeDOMStuff()
+{
+	document.getElementById('id_rays_form').childNodes[0].childNodes[1].nodeValue = "bbraided";
+}
+
+</script>
+</head>
+<body>
+<form name="rays_form_with_cbox" id="id_rays_form" >
+	<input type="checkbox" name="fishing_lines" id="id_braided" />Braided
+	<br>
+	<input type="checkbox" name="fishing_lines" id="id_mono" />Mono
+	<br>
+	<input type="checkbox" name="fishing_lines" id="id_leadcore" />Leadcore
+	<br>
+	<input type="button" value="Show state of chkbox" 
+		onclick="showCheckBoxStuff('id_mono');" />
+	<input type="button" value="Show DOM stuff" 
+		onclick="showDOMStuff();" />
+	<input type="button" value="Change DOM stuff" 
+		onclick="changeDOMStuff();" />
+</form>
+</body>
+</html>

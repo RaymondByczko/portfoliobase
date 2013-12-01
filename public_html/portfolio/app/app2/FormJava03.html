@@ -1,0 +1,11 @@
+ type="text/javascript">
+function showCheckBoxStuff(nf, nam)
+{
+	window.alert(document.forms[nf].elements[nam].checked);
+}
+</script>
+<form name="rays_form_with_cbox">
+	<input type="checkbox" name="fishing_lines" />
+	<input type="button" value="Show state of chkbox" 
+		onclick="showCheckBoxStuff('rays_form_with_cbox', 'fishing_lines');" />
+</form>

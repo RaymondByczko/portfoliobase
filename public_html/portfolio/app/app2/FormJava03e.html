@@ -1,0 +1,26 @@
+ type="text/javascript">
+function showCheckBoxStuff(theId)
+{
+	window.alert(document.getElementById(theId).checked);
+}
+
+function showDOMStuff()
+{
+	var len = document.getElementById('id_rays_form').childNodes[0].nodeName;
+	window.alert(len);
+}
+</script>
+<form name="rays_form_with_cbox" id="id_rays_form" >
+	<input type="checkbox" name="fishing_lines" id="id_braided" />Braided
+	<br>
+	<input type="checkbox" name="fishing_lines" id="id_mono" />Mono
+	<br>
+	<input type="checkbox" name="fishing_lines" id="id_leadcore" />Leadcore
+	<br>
+	<input type="checkbox" name="fishing_lines" id="id_spiderwire" />SpiderWire
+	<br>
+	<input type="button" value="Show state of chkbox" 
+		onclick="showCheckBoxStuff('id_mono');" />
+	<input type="button" value="Show DOM stuff" 
+		onclick="showDOMStuff();" />
+</form>
