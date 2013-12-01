@@ -20,6 +20,7 @@
 	November 24, 2013 - added app16. Accordingly added third col of sidebuttons.
 	November 25, 2013 - started 'more..' functionality.  Need to add 'less..'.
 	purpose: to provide a front end for my portfolio.
+	December 01, 2013 - added app2.
 
 	Note1: make sure to adjust the settings in the *Home javascript
 	functions to insure this code is properly set with regard to 
@@ -143,15 +144,15 @@ function gettoolboxhtml5Home()
 </div>
 <div id=left_c_id class="sidebuttons" style='display: none; position: absolute; top:144px; left: 192px; width: 88px; height: 308px' >
 <div id=menu21_id style='position: absolute; top: 0px; left:0px; width: 80px; height: 20px' >app16</div>
-<div id=menu22_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu23_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu24_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu25_id style='position: absolute; top: 112px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu26_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu27_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu28_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu29_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >vac</div>
-<div id=menu30_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >vac</div>
+<div id=menu22_id style='position: absolute; top: 28px; left:0px; width: 80px; height: 20px' >FormJava01</div>
+<div id=menu23_id style='position: absolute; top: 56px; left:0px; width: 80px; height: 20px' >FormJava02</div>
+<div id=menu24_id style='position: absolute; top: 84px; left:0px; width: 80px; height: 20px' >FormJava03</div>
+<div id=menu25_id style='position: absolute; top: 112px; left:0px; width: 80px; height: 20px' >FormJava03b</div>
+<div id=menu26_id style='position: absolute; top: 140px; left:0px; width: 80px; height: 20px' >FormJava03c</div>
+<div id=menu27_id style='position: absolute; top: 168px; left:0px; width: 80px; height: 20px' >FormJava03d</div>
+<div id=menu28_id style='position: absolute; top: 196px; left:0px; width: 80px; height: 20px' >FormJava03e</div>
+<div id=menu29_id style='position: absolute; top: 224px; left:0px; width: 80px; height: 20px' >FormJava03f</div>
+<div id=menu30_id style='position: absolute; top: 252px; left:0px; width: 80px; height: 20px' >FormJava04a</div>
 
 </div>
 <!-- 
@@ -288,6 +289,42 @@ $('#menumore2_id').click(function() {
   $('#left_c_id').show();
   $('#left_middle_id').css('left', '288px');
   $('#left_middle_id').css('width', '452px');
+});
+
+$('#menu22_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava01.html";
+});
+
+$('#menu23_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava02.html";
+});
+
+$('#menu24_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava03.html";
+});
+
+$('#menu25_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava03b.html";
+});
+
+$('#menu26_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava03c.html";
+});
+
+$('#menu27_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava03d.html";
+});
+
+$('#menu28_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava03e.html";
+});
+
+$('#menu29_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava03f.html";
+});
+
+$('#menu30_id').click(function() {
+  location.href="/portfolio/app/app2/FormJava04a.html";
 });
 
 // This section of code allows the top selection to become such that
