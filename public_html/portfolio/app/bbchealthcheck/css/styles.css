@@ -1,0 +1,207 @@
+body {
+display:inline;
+}
+
+div#body_id {
+position:absolute;
+display:inline;
+width:900px;
+height:400px;
+border:green double 4px;
+left:30px;
+top:60px;
+}
+
+
+div#bbcpd_help_id {
+position:absolute;
+width:750px;
+height:79px;
+left:10px;
+top:20px;
+}
+
+
+div#bbcpod_and_downloads_id {
+position:absolute;
+width:600px;
+height:43px;
+left:0px;
+text-align: center;
+padding-top:10px;
+padding-bottom:10px;
+border:black double 8px;
+font-family:sans-serif;
+font-size:43px;
+font-weight: bold;
+color:rgb(71, 175, 0);
+background:white;
+overflow:hidden;
+}
+
+
+
+div#bbcpod_and_downloads_id A:link {
+	color:rgb(71, 175, 0);
+	text-decoration:none;
+}
+
+div#bbcpod_and_downloads_id A:active {
+	color:rgb(71, 175, 0);
+	text-decoration:none;
+}
+
+div#bbcpod_and_downloads_id A:visited {
+	color:rgb(71, 175, 0);
+	text-decoration:none;
+}
+
+div#bbc_blank_id {
+position:absolute;
+height:79px;
+width:40px;
+left:616px;
+}
+
+div#bbc_help_id {
+position:absolute;
+height: 79px;
+width: 80px;
+background-color:green;
+color:white;
+right:0px;
+}
+
+div#find_podcast_id {
+position:absolute;
+height:50px;
+width:750px;
+left:10px;
+top:129px;
+background-color:rgb(62, 62, 62);
+border:dashed red 1px;
+}
+
+div#find_part1_id {
+position:absolute;
+display:inline;
+width:380px;
+height:26px;
+left:0px;
+top:12px;
+text-align: center;
+padding-left:20px;
+color:white;
+font-size:24px;
+font-weight:bold;
+font-family:sans-serif;
+}
+
+div#find_part2_id {
+position:absolute;
+width:275px;
+height:40px;
+right:0px;
+top:9px;
+color:white;
+text-align:left;
+font-size:24px;
+font-family:sans-serif;
+}
+
+input#quickfind_id {
+position:absolute;
+width:100px;
+height:20px;
+right:10px;
+top:5px;
+size:5;
+}
+
+div#orange_id {
+position:absolute;
+width:40px;
+height:40px;
+background:orange;
+left:0px;
+top:0px;
+}
+
+
+
+div#green_id {
+width:40px;
+height:40px;
+background:url(../images/foursprite.png) 120px 0;
+}
+
+#house1 {position:absolute; left:150px; top:100px;width:91px;height:87px;background-position:-409px -271px;display:block;background-repeat:no-repeat;}
+#fountain1 {position:absolute; left:150px; top: 200px;width:49px;height:49px;background-position:-280px -682px;background-repeat:no-repeat;}
+
+#house1, #fountain1 {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);} 
+
+#rocket_border {position:absolute; left:20px; top:250px;}
+#rocket_border {width:80px; height:100px;}
+#rocket_border {border:double green 4px;}
+
+#rocket {position:absolute; left:10px; top:0px;}
+
+#rocket {width:34px;height:95px;background-position:-420px -1008px;background-repeat:no-repeat;}
+
+#rocket {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);}
+
+#movie_border {position:absolute; left:200px; top:250px;}
+#movie_border {width:100px; height:100px;}
+#movie_border {border:double red 4px;}
+
+.clipedge {
+clip:rect(0px, 99px, 99px, 0px);
+}
+
+
+#clip_border {position:absolute; left:0px; top:0px;}
+#clip_border {width:100px; height:100px;}
+#clip_border {border:0px;}
+
+#motorguy {width:29px;height:26px;background-position:-1461px -1652px;background-repeat:no-repeat;}
+
+#motorguy {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);}
+
+#motorguy {background2: transparent; }
+
+
+#motorguy {position:absolute; left:0px; top:70px;}
+
+#motorguy {
+	-webkit-animation: track-scene-motorguy;
+	-webkit-animation-duration: 12s;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-play-state: paused;
+	animation: track-scene-fish;
+	animation-duration: 12s;
+	animation-iteration-count: 2;
+	animation-play-state: paused;
+	z-index: 20;
+}
+
+.transp {
+width:29px;
+height:26px;
+}
+
+#building {width:88px;height:76px;background-position:-1068px -439px;background-repeat:no-repeat;}
+
+#building {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);}
+
+#building {position:absolute; left:11px; top:23px;}
+
+#building {z-index:10; }
+
+@-webkit-keyframes track-scene-motorguy {
+0% {
+left: 0px;
+}
+100% {
+left: 160px;
+}
+}
