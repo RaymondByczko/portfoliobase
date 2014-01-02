@@ -5,9 +5,6 @@
 </head>
 <body>
 <div id="body_id">
-<div id="orange_id">
-<span>ora</span>
-</div>
 <div id="bbcpd_help_id">
 <div id="bbcpod_and_downloads_id">
 <a href="http://www.bbc.co.uk/podcasts">PODCASTS & DOWNLOADS</a>
@@ -33,25 +30,6 @@
 </ul>
 </div>
 
-
-<div id="house1">
-</div>
-<div id="rocket_border">
-<div id="rocket">
-</div>
-</div>
-<div id="movie_border">
-<div id="clip_border" class="clipedge">
-<layer id="layer1">
-<img id="motorguy"
-class="transp" src="images/transparent.png">
-</layer>
-<layer id="layer2">
-<div id="building">
-</div>
-</layer>
-</div>
-</div>
 </div>
 
 <script>

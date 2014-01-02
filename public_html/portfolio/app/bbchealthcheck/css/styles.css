@@ -197,16 +197,6 @@ height:45px;
 border-bottom: 5px solid rgb(71,175,0);
 }
 
-div#orange_id {
-position:absolute;
-width:40px;
-height:40px;
-background:orange;
-left:0px;
-top:0px;
-}
-
-
 
 div#green_id {
 width:40px;
@@ -214,58 +204,6 @@ height:40px;
 background:url(../images/foursprite.png) 120px 0;
 }
 
-#house1 {position:absolute; left:150px; top:100px;width:91px;height:87px;background-position:-409px -271px;display:block;background-repeat:no-repeat;}
-
-#house1, #fountain1 {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);} 
-
-#rocket_border {position:absolute; left:20px; top:250px;}
-#rocket_border {width:80px; height:100px;}
-#rocket_border {border:double green 4px;}
-
-#rocket {position:absolute; left:10px; top:0px;}
-
-#rocket {width:34px;height:95px;background-position:-420px -1008px;background-repeat:no-repeat;}
-
-#rocket {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);}
-
-#movie_border {position:absolute; left:200px; top:250px;}
-#movie_border {width:100px; height:100px;}
-#movie_border {border:double red 4px;}
-
-.clipedge {
-clip:rect(0px, 99px, 99px, 0px);
-}
-
-
-#clip_border {position:absolute; left:0px; top:0px;}
-#clip_border {width:100px; height:100px;}
-#clip_border {border:0px;}
-
-#motorguy {width:29px;height:26px;background-position:-1461px -1652px;background-repeat:no-repeat;}
-
-#motorguy {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);}
-
-#motorguy {background2: transparent; }
-
-
-#motorguy {position:absolute; left:0px; top:70px;}
-
-#motorguy {
-	-webkit-animation: track-scene-motorguy;
-	-webkit-animation-duration: 12s;
-	-webkit-animation-iteration-count: 2;
-	-webkit-animation-play-state: paused;
-	animation: track-scene-fish;
-	animation-duration: 12s;
-	animation-iteration-count: 2;
-	animation-play-state: paused;
-	z-index: 20;
-}
-
-.transp {
-width:29px;
-height:26px;
-}
 
 #building {width:88px;height:76px;background-position:-1068px -439px;background-repeat:no-repeat;}
 
@@ -275,11 +213,3 @@ height:26px;
 
 #building {z-index:10; }
 
-@-webkit-keyframes track-scene-motorguy {
-0% {
-left: 0px;
-}
-100% {
-left: 160px;
-}
-}
