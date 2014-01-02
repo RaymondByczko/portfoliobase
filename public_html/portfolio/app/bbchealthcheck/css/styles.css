@@ -22,6 +22,7 @@ top:20px;
 }
 
 
+
 div#bbcpod_and_downloads_id {
 position:absolute;
 width:600px;
@@ -59,18 +60,31 @@ div#bbcpod_and_downloads_id A:visited {
 div#bbc_blank_id {
 position:absolute;
 height:79px;
-width:40px;
+width:13px;
 left:616px;
 }
 
 div#bbc_help_id {
 position:absolute;
 height: 79px;
-width: 80px;
-background-color:green;
+width: 120px;
+background-color:rgb(71, 175, 0);
 color:white;
 right:0px;
+text-align:center;
+font-size:25px;
+line-height:79px;
 }
+
+#help_icon_id {
+position:absolute;
+width:20px;
+height:20px;
+top:29px;
+right:5px;
+background:url(../other_img/help-icon.png) rgb(71, 175, 0) center no-repeat;
+}
+
 
 div#find_podcast_id {
 position:absolute;
@@ -99,7 +113,7 @@ font-family:sans-serif;
 
 div#find_part2_id {
 position:absolute;
-width:275px;
+width:285px;
 height:40px;
 right:0px;
 top:9px;
@@ -109,6 +123,15 @@ font-size:24px;
 font-family:sans-serif;
 }
 
+#search_id {
+position:absolute;
+width:20px;
+height:26px;
+top:5px;
+background:url(../other_img/blq-search_grey_alpha.png) rgb(71, 175, 0) center no-repeat;
+right:116px;
+}
+
 input#quickfind_id {
 position:absolute;
 width:100px;
@@ -116,6 +139,62 @@ height:20px;
 right:10px;
 top:5px;
 size:5;
+}
+
+div#hmenu_id {
+position:absolute;
+height:50px;
+width:750px;
+left:10px;
+top:185px;
+background-color:rgb(62, 62, 62);
+border:dashed green 1px;
+}
+
+
+#hmenu-nav-main_id {
+margin-top:0px;
+margin-bottom:0px;
+padding-left:0px;
+position:absolute;
+top:0px;
+left:0px;
+height:50px;
+}
+
+
+
+.hmenu-entry-1st {
+position:relative;
+left:6px;
+width:91px;
+height:48px;
+border:solid black 1px;
+color:white;
+float:left;
+list-style-type:none;
+text-align:center;
+line-height:48px;
+}
+
+.hmenu-entry {
+position:relative;
+left:6px;
+width:91px;
+height:48px;
+border:solid black 1px;
+border-left:0px;
+color:white;
+float:left;
+list-style-type:none;
+text-align:center;
+line-height:48px;
+}
+
+
+li:hover {
+height:45px;
+border-bottom: 5px solid rgb(71,175,0);
 }
 
 div#orange_id {
@@ -136,7 +215,6 @@ background:url(../images/foursprite.png) 120px 0;
 }
 
 #house1 {position:absolute; left:150px; top:100px;width:91px;height:87px;background-position:-409px -271px;display:block;background-repeat:no-repeat;}
-#fountain1 {position:absolute; left:150px; top: 200px;width:49px;height:49px;background-position:-280px -682px;background-repeat:no-repeat;}
 
 #house1, #fountain1 {background-image:url(../images_nonrbyczko/buildingssheet7dv_9.png);} 
 
