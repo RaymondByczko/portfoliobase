@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule .gitsha1$ /portfolio/app/sha1/cgi-bin/gitsha1.php
+
+#Action gen-gitsha1 /cgi-bin/gitsha1.php
+#AddHandler gen-gitsha1 .gitsha1
